@@ -1,4 +1,5 @@
 import os
 
-def foo(x:int, y:int):
-  return x+y
+
+def foo(x: int, y: int):
+  return x + y
