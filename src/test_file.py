@@ -7,3 +7,7 @@ def foo(x: int, y: int):
 
 def bar():
     return None
+
+
+def boo():
+    return None
