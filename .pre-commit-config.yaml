@@ -12,3 +12,7 @@ repos:
     rev: 23.3.0
     hooks:
     -   id: black
+- repo: https://github.com/thibaudcolas/curlylint
+  rev: v0.13.1
+  hooks:
+    - id: curlylint
