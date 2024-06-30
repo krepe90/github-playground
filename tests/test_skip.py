@@ -1,8 +1,10 @@
 import pytest
 
+
 @pytest.mark.skip(reason="no way of currently testing this")
 def test_skip():
     assert True
+
 
 def test_skip_2():
     if True:

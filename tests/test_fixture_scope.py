@@ -5,6 +5,7 @@ import pytest
 def name_list():
     return ["Alice", "Bob", "Charlie"]
 
+
 @pytest.fixture(scope="class")
 def name_list_class():
     return ["Alice", "Bob", "Charlie", "David"]
@@ -14,6 +15,7 @@ def test_fixture_scope_1(name_list):
     # pass
     name_list.append("David")
     assert name_list == ["Alice", "Bob", "Charlie", "David"]
+
 
 def test_fixture_scope_2(name_list):
     # pass

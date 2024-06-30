@@ -4,6 +4,7 @@ import pytest
 def multiply(x: int, y: int) -> int:
     return x * y
 
+
 @pytest.mark.parametrize(
     "x, y, expected",
     [
@@ -15,7 +16,7 @@ def multiply(x: int, y: int) -> int:
         (3, 5, 15),
         pytest.param(4, 5, 30, marks=pytest.mark.xfail),
         pytest.param(4, 6, 35, marks=pytest.mark.xfail),
-    ]
+    ],
 )
 def test_multiply(x, y, expected):
     assert multiply(x, y) == expected

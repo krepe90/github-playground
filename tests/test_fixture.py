@@ -3,11 +3,7 @@ import pytest
 
 @pytest.fixture
 def data():
-    d = {
-        "name": "John",
-        "age": 30,
-        "city": "New York"
-    }
+    d = {"name": "John", "age": 30, "city": "New York"}
     return d
 
 
@@ -31,6 +27,7 @@ def test_fixture_2(data):
     assert data["name"] == "Jane"
     assert data["age"] == 25
     assert data["city"] == "New York"
+
 
 def test_fixture_file(text_file):
     assert text_file.read() == "Hello, World!"
